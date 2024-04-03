@@ -1,0 +1,16 @@
+.text-area .content{
+    -fx-background-color: #393c45;
+}
+
+.text-area {
+    -fx-text-fill: white;
+    -fx-font-size: 25px;
+}
+
+.menu-bar {
+    -fx-background-color: #393c45;
+}
+
+.menu-item:focused{
+    -fx-background-color: red;
+}

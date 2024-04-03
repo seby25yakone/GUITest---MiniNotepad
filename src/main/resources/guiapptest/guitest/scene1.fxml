@@ -2,15 +2,14 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="592.0" prefWidth="599.0" style="-fx-background-color: #242424;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiapptest.guitest.Scene1Controller">
+<AnchorPane prefHeight="592.0" prefWidth="599.0" style="-fx-background-color: #242424;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiapptest.guitest.Scene1Controller">
    <children>
-      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="599.0" style="-fx-background-color: #393c45; -fx-blend-mode: normal;">
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="599.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem mnemonicParsing="false" text="Save" onAction="#fileWrite"/>
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
@@ -25,14 +24,6 @@
           </Menu>
         </menus>
       </MenuBar>
-      <ScrollPane fitToHeight="true" fitToWidth="true" layoutY="49.0" prefHeight="527.0" prefWidth="599.0" style="-fx-background-color: #242424;">
-         <content>
-            <TextArea prefHeight="507.0" prefWidth="597.0" style="-fx-background-color: #242424;">
-               <font>
-                  <Font size="31.0" />
-               </font>
-            </TextArea>
-         </content>
-      </ScrollPane>
+      <TextArea fx:id="textArea" layoutY="57.0" prefHeight="499.0" prefWidth="599.0" />
    </children>
 </AnchorPane>
