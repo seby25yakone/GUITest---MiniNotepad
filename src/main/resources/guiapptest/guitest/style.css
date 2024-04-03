@@ -1,3 +1,7 @@
+.root {
+    -fx-background-color: #393c45;
+}
+
 .text-area .content{
     -fx-background-color: #393c45;
 }
@@ -8,6 +12,22 @@
 }
 
 .menu-bar {
+    -fx-background-color: #393c45;
+}
+
+.menu .label{
+    -fx-text-fill: white;
+}
+
+.menu:hover{
+    -fx-background-color: #8568e3;
+}
+
+.menu:showing{
+    -fx-background-color: #8568e3;
+}
+
+.menu-item{
     -fx-background-color: #393c45;
 }
 

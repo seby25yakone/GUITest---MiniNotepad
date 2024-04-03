@@ -2,7 +2,9 @@ package guiapptest.guitest;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuBar;
 import javafx.scene.control.TextArea;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -11,6 +13,12 @@ import java.io.*;
 public class Scene1Controller {
     @FXML
     private TextArea textArea;
+
+    @FXML
+    private AnchorPane anchorPane;
+
+    @FXML
+    private MenuBar menuBar;
 
     @FXML
     public void fileWrite() {
@@ -56,5 +64,12 @@ public class Scene1Controller {
                 br.close();
             }
         }
+    }
+
+    public void adjustLayout(double sceneWidth, double sceneHeight) {
+        textArea.setPrefWidth(sceneWidth);
+        textArea.setPrefHeight(sceneHeight-100);
+        menuBar.setPrefWidth(sceneWidth);
+        menuBar.setPrefHeight(sceneHeight);
     }
 }
