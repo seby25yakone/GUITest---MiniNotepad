@@ -6,10 +6,7 @@ import javafx.scene.control.TextArea;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class Scene1Controller {
     @FXML
@@ -17,20 +14,11 @@ public class Scene1Controller {
 
     @FXML
     public void fileWrite() {
-        // Create a FileChooser
         FileChooser fileChooser = new FileChooser();
-
-        // Set initial directory (optional)
         fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
-
-        // Set extension filter (optional)
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Text files (*.txt)", "*.txt");
         fileChooser.getExtensionFilters().add(extFilter);
-
-        // Show save dialog
         File file = fileChooser.showSaveDialog(textArea.getScene().getWindow());
-
-        // Proceed if a file is selected
         if (file != null) {
             try {
                 BufferedWriter bf = new BufferedWriter(new FileWriter(file));
@@ -39,6 +27,33 @@ public class Scene1Controller {
                 bf.close();
             } catch (IOException e) {
                 e.printStackTrace();
+            }
+        }
+    }
+
+    public void openFile() throws IOException {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Text files (*.txt)", "*.txt");
+        fileChooser.getExtensionFilters().add(extFilter);
+        File file = fileChooser.showOpenDialog(textArea.getScene().getWindow());
+        if (file != null) {
+            BufferedReader br = new BufferedReader(new FileReader(file));
+            try {
+                StringBuilder sb = new StringBuilder();
+                String line = br.readLine();
+
+                while (line != null) {
+                    sb.append(line);
+                    sb.append(System.lineSeparator());
+                    line = br.readLine();
+                }
+                String everything = sb.toString();
+                textArea.setText(everything);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            } finally {
+                br.close();
             }
         }
     }
