@@ -16,6 +16,7 @@
           <Menu mnemonicParsing="false" text="Edit">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#setFont" text="Font..." />
+                  <CheckMenuItem mnemonicParsing="false" onAction="#changeWordWrap" text="Word Wrap" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">

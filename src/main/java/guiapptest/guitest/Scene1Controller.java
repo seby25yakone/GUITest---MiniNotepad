@@ -128,4 +128,8 @@ public class Scene1Controller {
         aboutWindow.show();
     }
 
+    public void changeWordWrap(){
+        textArea.setWrapText(!textArea.isWrapText());
+    }
+
 }

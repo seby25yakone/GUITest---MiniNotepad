@@ -22,12 +22,10 @@ public class App extends Application {
         stage.show();
 
         scene.widthProperty().addListener((obs, oldVal, newVal) -> {
-            // Adjust layout when scene width changes
             controller.adjustLayout(newVal.doubleValue(), scene.getHeight());
         });
 
         scene.heightProperty().addListener((obs, oldVal, newVal) -> {
-            // Adjust layout when scene height changes
             controller.adjustLayout(scene.getWidth(), newVal.doubleValue());
         });
     }

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31931bf-be29-4661-97e6-b90882da4bd3" name="Changes" comment="added font selector for text area">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/guitest/aboutscene.fxml" afterDir="false" />
+    <list default="true" id="e31931bf-be29-4661-97e6-b90882da4bd3" name="Changes" comment="added about window">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/Scene1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/Scene1Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/guitest/scene1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/guitest/scene1.fxml" afterDir="false" />
     </list>
@@ -87,7 +87,7 @@
       <workItem from="1712158729090" duration="523000" />
       <workItem from="1712159266520" duration="806000" />
       <workItem from="1712177386781" duration="1381000" />
-      <workItem from="1712234398884" duration="7767000" />
+      <workItem from="1712234398884" duration="8263000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -153,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712240309834</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added about window">
+      <option name="closed" value="true" />
+      <created>1712242264642</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712242264642</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +186,7 @@
     <MESSAGE value="added character and word count" />
     <MESSAGE value="added colorpicker for font color" />
     <MESSAGE value="added font selector for text area" />
-    <option name="LAST_COMMIT_MESSAGE" value="added font selector for text area" />
+    <MESSAGE value="added about window" />
+    <option name="LAST_COMMIT_MESSAGE" value="added about window" />
   </component>
 </project>
