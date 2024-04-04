@@ -1,6 +1,8 @@
 package guiapptest.guitest;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuBar;
@@ -9,6 +11,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import org.controlsfx.dialog.FontSelectorDialog;
 
 import java.io.*;
@@ -113,6 +116,16 @@ public class Scene1Controller {
             textArea.setFont(font);
             textArea.setStyle("-fx-font-family: '" + font.getFamily() + "';");
         });
+    }
+
+    public void openAbout() throws IOException {
+        Stage aboutWindow = new Stage();
+        aboutWindow.initStyle(StageStyle.UTILITY);
+        aboutWindow.setResizable(false);
+        aboutWindow.setTitle("About MiniNotepad");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("aboutscene.fxml"));
+        aboutWindow.setScene(new Scene(loader.load()));
+        aboutWindow.show();
     }
 
 }
