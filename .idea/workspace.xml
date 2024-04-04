@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31931bf-be29-4661-97e6-b90882da4bd3" name="Changes" comment="fixed minor styling issues and added component resizing based on window size">
+    <list default="true" id="e31931bf-be29-4661-97e6-b90882da4bd3" name="Changes" comment="added character and word count">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/Scene1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/Scene1Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/guitest/scene1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/guitest/scene1.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/guitest/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/guitest/style.css" afterDir="false" />
@@ -83,7 +82,7 @@
       <workItem from="1712158729090" duration="523000" />
       <workItem from="1712159266520" duration="806000" />
       <workItem from="1712177386781" duration="1381000" />
-      <workItem from="1712234398884" duration="4017000" />
+      <workItem from="1712234398884" duration="4784000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -117,7 +116,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712160059205</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added character and word count">
+      <option name="closed" value="true" />
+      <created>1712238444335</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712238444335</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added character and word count">
+      <option name="closed" value="true" />
+      <created>1712238458102</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712238458102</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +154,7 @@
     <MESSAGE value="removed obsolete scroll pane and added save file functionality" />
     <MESSAGE value="added open file functionality" />
     <MESSAGE value="fixed minor styling issues and added component resizing based on window size" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed minor styling issues and added component resizing based on window size" />
+    <MESSAGE value="added character and word count" />
+    <option name="LAST_COMMIT_MESSAGE" value="added character and word count" />
   </component>
 </project>

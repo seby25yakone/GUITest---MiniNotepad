@@ -38,3 +38,8 @@
 .menu-item:focused{
     -fx-background-color: red;
 }
+
+.color-picker {
+    -fx-background-color: #1a2029;
+    -fx-border-color: #1f1a29;
+}
