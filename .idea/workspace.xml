@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31931bf-be29-4661-97e6-b90882da4bd3" name="Changes" comment="added word wrap toggle">
+    <list default="true" id="e31931bf-be29-4661-97e6-b90882da4bd3" name="Changes" comment="fixed font change to change size as well">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/Scene1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/Scene1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,7 @@
       <workItem from="1712158729090" duration="523000" />
       <workItem from="1712159266520" duration="806000" />
       <workItem from="1712177386781" duration="1381000" />
-      <workItem from="1712234398884" duration="9094000" />
+      <workItem from="1712234398884" duration="10159000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -170,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712242923512</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fixed font change to change size as well">
+      <option name="closed" value="true" />
+      <created>1712244871823</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712244871823</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +205,7 @@
     <MESSAGE value="added font selector for text area" />
     <MESSAGE value="added about window" />
     <MESSAGE value="added word wrap toggle" />
-    <option name="LAST_COMMIT_MESSAGE" value="added word wrap toggle" />
+    <MESSAGE value="fixed font change to change size as well" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed font change to change size as well" />
   </component>
 </project>
