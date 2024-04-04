@@ -2,6 +2,10 @@
     -fx-background-color: #393c45;
 }
 
+.label {
+    -fx-text-fill: white;
+}
+
 .text-area .content{
     -fx-background-color: #393c45;
 }

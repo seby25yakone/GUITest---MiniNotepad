@@ -25,6 +25,9 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TextArea fx:id="textArea" layoutY="57.0" prefHeight="499.0" prefWidth="599.0" />
+      <TextArea fx:id="textArea" layoutY="57.0" onKeyPressed="#getLineAndWordCount" onKeyReleased="#getLineAndWordCount" onKeyTyped="#getLineAndWordCount" onMouseClicked="#getLineAndWordCount" prefHeight="499.0" prefWidth="599.0" />
+      <Label fx:id="lineLabel" layoutX="32.0" layoutY="561.0" text="Character: 0" />
+      <Label fx:id="wordCount" layoutX="125.0" layoutY="561.0" text="Word count: 0" />
+      <ColorPicker fx:id="colorPicker" layoutX="14.0" layoutY="35.0" prefHeight="18.0" prefWidth="63.0" />
    </children>
 </AnchorPane>

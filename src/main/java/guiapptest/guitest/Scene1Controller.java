@@ -1,6 +1,7 @@
 package guiapptest.guitest;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.TextArea;
@@ -9,6 +10,7 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.*;
+import java.util.StringTokenizer;
 
 public class Scene1Controller {
     @FXML
@@ -19,6 +21,15 @@ public class Scene1Controller {
 
     @FXML
     private MenuBar menuBar;
+
+    @FXML
+    private Label lineLabel;
+
+    @FXML
+    private Label wordCount;
+
+    @FXML
+    private ColorPicker colorPicker;
 
     @FXML
     public void fileWrite() {
@@ -67,9 +78,20 @@ public class Scene1Controller {
     }
 
     public void adjustLayout(double sceneWidth, double sceneHeight) {
+        anchorPane.setPrefWidth(sceneWidth);
+        anchorPane.setPrefHeight(sceneHeight);
         textArea.setPrefWidth(sceneWidth);
         textArea.setPrefHeight(sceneHeight-100);
         menuBar.setPrefWidth(sceneWidth);
         menuBar.setPrefHeight(sceneHeight);
+        lineLabel.setLayoutY(sceneHeight-35);
+        wordCount.setLayoutY(sceneHeight-35);
     }
+
+    public void getLineAndWordCount(){
+        lineLabel.setText("Character: " + textArea.getCaretPosition());
+        StringTokenizer words = new StringTokenizer(textArea.getText());
+        wordCount.setText("Word count: " + words.countTokens());
+    }
+
 }
