@@ -115,6 +115,7 @@ public class Scene1Controller {
         fontDialog.showAndWait().ifPresent(font -> {
             textArea.setFont(font);
             textArea.setStyle("-fx-font-family: '" + font.getFamily() + "';");
+            textArea.setStyle("-fx-font-size: " + font.getSize() + "px;");
         });
     }
 
