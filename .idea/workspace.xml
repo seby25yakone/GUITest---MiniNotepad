@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31931bf-be29-4661-97e6-b90882da4bd3" name="Changes" comment="added character and word count">
+    <list default="true" id="e31931bf-be29-4661-97e6-b90882da4bd3" name="Changes" comment="added colorpicker for font color">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/Scene1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guiapptest/guitest/Scene1Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/guitest/scene1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/guitest/scene1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/guiapptest/guitest/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/guiapptest/guitest/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
       <workItem from="1712158729090" duration="523000" />
       <workItem from="1712159266520" duration="806000" />
       <workItem from="1712177386781" duration="1381000" />
-      <workItem from="1712234398884" duration="4784000" />
+      <workItem from="1712234398884" duration="5617000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -132,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712238458102</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added colorpicker for font color">
+      <option name="closed" value="true" />
+      <created>1712239217700</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712239217700</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +162,7 @@
     <MESSAGE value="added open file functionality" />
     <MESSAGE value="fixed minor styling issues and added component resizing based on window size" />
     <MESSAGE value="added character and word count" />
-    <option name="LAST_COMMIT_MESSAGE" value="added character and word count" />
+    <MESSAGE value="added colorpicker for font color" />
+    <option name="LAST_COMMIT_MESSAGE" value="added colorpicker for font color" />
   </component>
 </project>

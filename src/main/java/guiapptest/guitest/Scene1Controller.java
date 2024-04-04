@@ -9,6 +9,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import org.controlsfx.dialog.FontSelectorDialog;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -105,4 +106,13 @@ public class Scene1Controller {
                 (int) (color.getGreen() * 255),
                 (int) (color.getBlue() * 255));
     }
+
+    public void setFont() {
+        FontSelectorDialog fontDialog = new FontSelectorDialog(textArea.getFont());
+        fontDialog.showAndWait().ifPresent(font -> {
+            textArea.setFont(font);
+            textArea.setStyle("-fx-font-family: '" + font.getFamily() + "';");
+        });
+    }
+
 }
